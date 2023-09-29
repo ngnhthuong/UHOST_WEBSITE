@@ -111,12 +111,14 @@ body{
 
 .plan{
     border: 4px #0e4f1f solid;
-    margin: 15px;
-    padding: 15px;
+    margin: 16px 0;
+        border-left: none;
+    width: 80%;
 }
 
 .plan:hover, .plan:active{
     border: 3px #ff1b68 solid;
+    border-left: none;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
@@ -137,19 +139,31 @@ body{
 
 .plan-links{
     text-decoration: none;
+    display: block;
+    padding: 32px;
+    color: inherit;
 }
 
+
 .plan-link__title{
-    color: purple;
+    /* color: purple; */
 }
 
 .plan-link__sup{
-    color: rgb(154, 153, 153);
+    color: #979797;
 }
 
 .plan-link__description{
     border: 2px solid #354239;
     padding: 10px;
-    color: black;
+    color: #0e4f1f
+    /* color: black; */
 }
 
+#free{
+    background:rgba(234,252,237,0.95);
+}
+
+#plus{
+    background:rgba(213,255,220,0.95);
+}
