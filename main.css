@@ -133,6 +133,13 @@ body {
     color: #8a8a8a;
 } */
 
+.plan__list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
 .plan--highlighted .plan__title {
     color: white;
 }

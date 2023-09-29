@@ -1,0 +1,24 @@
+.float-left {
+    float: left;
+    width: 50%;
+    background-color: lightblue;
+  }
+
+  .clear-both {
+    clear: both;
+    background-color: lightgreen;
+  }
+  
+  
+  .float-right {
+    float: right;
+    width: 50%;
+    background-color: lightcoral;
+  }
+  
+  .float-rightt {
+    float: right;
+    width: 50%;
+    background-color: rgb(31, 27, 27);
+  }
+  
