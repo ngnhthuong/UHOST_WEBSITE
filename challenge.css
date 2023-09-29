@@ -1,0 +1,155 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+
+.main-header {
+    width: 100%;
+    background-color: #2ddf5c;
+    padding: 12px 16px;
+}
+
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 30px;
+    padding: 1px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-header>div {
+    display: inline-block;
+    color: #0e4f1f;
+    font-weight: bold;
+}
+
+.main-header>div a {
+    text-decoration: none;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 70px);
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+/* Footer */
+.main-footer {
+    background: black;
+    color: white;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link>a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-footer__nav {
+    text-align: center;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    cursor: pointer;
+    color: #ccc;
+}
+
+/* main section plan */
+
+.plan{
+    border: 4px #0e4f1f solid;
+    margin: 15px;
+    padding: 15px;
+}
+
+.plan:hover, .plan:active{
+    border: 3px #ff1b68 solid;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.plan--highlighted{
+    background: #0e4f1f;
+    color: white;
+}
+
+.plan--highlighted .plan-link__title{
+    color: white;
+}
+
+.plan--highlighted .plan-link__description{
+    color: white;
+    border: 2px solid #ccc; 
+}
+
+
+.plan-links{
+    text-decoration: none;
+}
+
+.plan-link__title{
+    color: purple;
+}
+
+.plan-link__sup{
+    color: rgb(154, 153, 153);
+}
+
+.plan-link__description{
+    border: 2px solid #354239;
+    padding: 10px;
+    color: black;
+}
+
