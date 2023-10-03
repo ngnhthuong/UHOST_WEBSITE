@@ -1,59 +1,71 @@
-/* Header */
-
-*{
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 .main-header {
     width: 100%;
-    background-color: #2ddf5c;
-    padding: 12px 16px;
     position: fixed;
     top: 0;
+    left: 0;
+    background: #2ddf5c;
+    padding: 8px 16px;
     z-index: 1;
 }
 
-
-.main-nav__item {
+.main-header > div {
     display: inline-block;
+    vertical-align: middle;
 }
 
-.main-nav__item a {
+.main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    margin: 0px 30px;
-    padding: 1px;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-    color: white;
-    border-bottom: 5px solid white;
-}
-
-.main-header>div {
+    font-size: 22px;
+    height: 22px;
+    /* width: 20px; */
     display: inline-block;
-    color: #0e4f1f;
-    font-weight: bold;
 }
 
-.main-header>div a {
-    text-decoration: none;
+.main-header__brand img {
+    height: 100%;
+    /* width: 100%; */
 }
 
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 70px);
+    width: calc(100% - 74px);
+    vertical-align: middle;
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
@@ -70,19 +82,17 @@
     border: none;
 }
 
-/* Footer */
 .main-footer {
     background: black;
-    color: white;
     padding: 32px;
     margin-top: 48px;
 }
 
 .main-footer__links {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-    display: inline-block;
+    text-align: center;
 }
 
 .main-footer__link {
@@ -90,19 +100,33 @@
     margin: 0 16px;
 }
 
-.main-footer__link>a {
-    text-decoration: none;
+.main-footer__link a {
     color: white;
-}
-
-.main-footer__nav {
-    text-align: center;
+    text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-    cursor: pointer;
     color: #ccc;
 }
 
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
+}
