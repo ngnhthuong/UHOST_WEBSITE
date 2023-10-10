@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .toggle-button{
-    /* display: none; */
+    display: none;
     width: 3rem;
     background: transparent;
     border: none;
