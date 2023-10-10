@@ -20,11 +20,11 @@ body::-webkit-scrollbar {
     background-color: white;
 }
 
-body::-webkit-scrollbar-thumb{
-    background-color:#2ddf5c;
+body::-webkit-scrollbar-thumb {
+    background-color: #2ddf5c;
 }
 
-.backdrop{
+.backdrop {
     position: fixed;
     display: none;
     top: 0;
@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb{
     z-index: 10;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -46,12 +46,12 @@ body::-webkit-scrollbar-thumb{
     z-index: 1;
 }
 
-.main-header > div {
+.main-header>div {
     display: inline-block;
     vertical-align: middle;
 }
 
-.toggle-button{
+.toggle-button {
     /* display: none; */
     width: 3rem;
     background: transparent;
@@ -61,15 +61,23 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 0;
     vertical-align: middle;
 }
-.toggle-button:focus{
+
+@media (min-width: 40rem){
+    .toggle-button {
+        display: none;
+    }
+}
+
+.toggle-button:focus {
     outline: none;
 }
-.toggle-button__bar{
+
+.toggle-button__bar {
     width: 100%;
     height: 0.2rem;
     background: black;
     display: block;
-    margin: 0.6rem 0;   
+    margin: 0.6rem 0;
 }
 
 
@@ -90,10 +98,19 @@ body::-webkit-scrollbar-thumb{
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 100px);
     vertical-align: middle;
+}
+
+@media (min-width: 40rem) {
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 100px);
+        vertical-align: middle;
+    }
 }
 
 
@@ -167,18 +184,19 @@ body::-webkit-scrollbar-thumb{
     color: #ccc;
 }
 
-.mobile-nav{
+.mobile-nav {
     display: none;
     position: fixed;
     z-index: 101;
     top: 0;
     left: 0;
     background: white;
-    width: 40%;
+    width: 70%;
     height: 100%;
 }
 
-.mobile-nav__items{
+
+.mobile-nav__items {
     width: 90%;
     height: 100%;
     list-style: none;
@@ -187,11 +205,11 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
 }
 
-.mobile-nav__item{
+.mobile-nav__item {
     margin: 1rem 0;
 }
 
-.mobile-nav__item a{
+.mobile-nav__item a {
     font-size: 1.5rem;
 }
 
@@ -215,6 +233,7 @@ body::-webkit-scrollbar-thumb{
 .button:focus {
     outline: none;
 }
-.open{
+
+.open {
     display: block !important;
 }
