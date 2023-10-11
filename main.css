@@ -32,10 +32,10 @@
   font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem)  and (orientation: portrait){
   #product-overview {
     height: 40vh;
-    background-position: 50% 25%;
+    background-position: 50% 35%;
   }
 
   #product-overview h1 {
@@ -93,7 +93,7 @@
   margin: 0.5rem 0;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (orientation: landscape) {
   .plan__list {
     width: 100%;
     text-align: center;
